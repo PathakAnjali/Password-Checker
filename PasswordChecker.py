@@ -8,7 +8,7 @@ def req_api(pswrd):
     url = 'https://api.pwnedpasswords.com/range/' + pswrd
     res = requests.get(url, allow_redirects=False)
     
-    print(res.status_code)                                # to check the success status 20 (optional)
+    print(res.status_code)                                # to check the success status '200' (optional)
 
 
     if res.status_code != 200:
@@ -62,7 +62,7 @@ def main(args):
 
 
 if __name__ == "__main__":
-    sys.exit(main(sys.argv[1:]))  # sys.exit going to return Done ,as it exits throufg the function return statements
+    sys.exit(main(sys.argv[1:]))  # sys.exit going to return Done 
 
 
 
